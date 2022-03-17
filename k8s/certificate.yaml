@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+ 
+kind: Certificate
+metadata:
+  name: fldmpark-one-tls
+spec:
+  secretName: fldmpark-one
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: fldmpark.one
+  dnsNames:
+    - fldmpark.one
+    - www.fldmpark.one
