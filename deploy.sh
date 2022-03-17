@@ -1,6 +1,6 @@
-docker build -t fldm713/multi-client:latest -t fldm7/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t fldm713/multi-server:latest -t fldm7/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t fldm713/multi-worker:latest -t fldm7/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t fldm713/multi-client:latest -t fldm713/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t fldm713/multi-server:latest -t fldm713/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t fldm713/multi-worker:latest -t fldm713/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push fldm713/multi-client:latest
 docker push fldm713/multi-server:latest
